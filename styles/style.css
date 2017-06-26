@@ -132,7 +132,7 @@ body,
 }.header::after {
     content: "";
     position: absolute;
-  background-image: url(../../public/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -82px;
   background-size: 286px 206px;
   width: 79px;
@@ -173,7 +173,7 @@ body,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: 0px 0px;
     background-size: 286px 206px;
     width: 151px;
@@ -297,7 +297,7 @@ body,
     position: absolute;
     left: -50px;
     top: -40px;
-  background-image: url(../../public/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -82px;
   background-size: 286px 206px;
   width: 79px;
@@ -382,7 +382,7 @@ body,
 .menu .search .submit-button .submit {
     cursor: pointer;
     border: none;
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -259px -39px;
     background-size: 286px 206px;
     width: 24px;
@@ -546,7 +546,7 @@ body,
     color: #fbfff7;
 }
 .footer .logo .wrapper .company a {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -151px -39px;
     background-size: 286px 206px;
     width: 73px;
@@ -560,7 +560,7 @@ body,
     margin-top: 25px;
 }
 .footer .logo .wrapper .creator a {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -151px 0px;
     background-size: 286px 206px;
     width: 135px;
@@ -1011,7 +1011,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.doc div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -224px -39px;
     background-size: 286px 206px;
     width: 35px;
@@ -1047,7 +1047,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.xls div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -232px -75px;
     background-size: 286px 206px;
     width: 29px;
@@ -1083,7 +1083,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.pdf div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -151px -75px;
     background-size: 286px 206px;
     width: 41px;
@@ -1533,7 +1533,7 @@ body {
         content: "";
         display: block;
         margin-left: 18px;
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -192px -75px;
         background-size: 286px 206px;
         width: 40px;
