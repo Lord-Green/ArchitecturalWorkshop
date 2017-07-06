@@ -4,11 +4,10 @@ function menu() {
   $('.gamburger').click(function () {
     if (!$('.icon-menu').hasClass('active')) {
       $('.top-menu').find('ul').css('display', 'flex');
-      $('.top-menu').find('.sw-topper').css('background', 'white');
-      $('.top-menu').find('.sw-bottom').css('background', 'white');
-      $('.top-menu').find('.sw-footer').css('background', 'white');
-      $('.top-menu').css('background', '#516199');
-      $('.ul').css('background', '#516199');
+      $('.top-menu').find('.sw-topper').css('background', '#3f3d3f');
+      $('.top-menu').find('.sw-bottom').css('background', '#3f3d3f');
+      $('.top-menu').find('.sw-footer').css('background', '#3f3d3f');
+      $('.top-menu').css('background', '#ff712c');
       $('.top-menu').find('ul').css('opacity', '1');
       $('.icon-menu').addClass('active');
 
@@ -17,9 +16,9 @@ function menu() {
       $('.top-menu').css('background', 'none');
       $('.ul').css('background', 'none');
       $('.top-menu').find('ul').css('opacity', '0');
-      $('.top-menu').find('.sw-topper').css('background', '#516199');
-      $('.top-menu').find('.sw-bottom').css('background', '#516199');
-      $('.top-menu').find('.sw-footer').css('background', '#516199');
+      $('.top-menu').find('.sw-topper').css('background', '#3f3e41');
+      $('.top-menu').find('.sw-bottom').css('background', '#3f3e41');
+      $('.top-menu').find('.sw-footer').css('background', '#3f3e41');
       $('.icon-menu').removeClass('active');
     }
   });
@@ -30,17 +29,26 @@ function menu() {
 $(document).ready(function ($) {
   menu();
 
+  $("#content-slider").lightSlider({
+    loop: true,
+    keyPress: true
+  });
+  $('#image-gallery').lightSlider({
+    gallery: true,
+    item: 1,
+    thumbItem: 9,
+    slideMargin: 0,
+    speed: 500,
+    auto: true,
+    loop: true,
+    onSliderLoad: function () {
+      $('#image-gallery').removeClass('cS-hidden');
+    }
+  });
+
+
   window.onresize = function () {
     var newWidthWindow = document.documentElement.clientWidth;
-    // сменили ориентацию на телефоне/планшете, но новая ширина все равно не требует десктоп версии 
-    //if (currentWidthWindow < newWidthWindow && newWidthWindow < 1200) {
-    //  return;
-    //}
-    // else if (currentWidthWindow > newWidthWindow && currentWidthWindow < 1200) {
-    //   //не работает()
-    //   return;
-    // }
-    //else
     if (newWidthWindow < 1165) {
       if ($('.icon-menu').hasClass('active')) {
         $('.top-menu').css('background', 'transparent');
@@ -67,50 +75,37 @@ $(document).ready(function ($) {
         $('.top-menu').find('ul').css('display', 'inline-flex');
       }
     }
-    //currentWidthWindow = newWidthWindow;
   }
+
+
 });
 
 
-var owl = $('.owl-carousel-for-1');
-owl.owlCarousel({
-  margin: 10,
-  nav: true,
-  navText: true,
-  loop: true,
-  dots: true,
-  responsive: {
-    0: {
-      items: 1
-    }
-  }
-})
-
-var owl = $('.owl-carousel-for-2');
-owl.owlCarousel({
-  margin: 10,
-  nav: true,
-  dots: false,
-  loop: true,
-
-  responsive: {
-    0: {
-      items: 2
-    },
-
-    760: {
-      items: 3
-    }
-  }
-})
-
-var owl = $('.owl-carousel-main-slider');
+var owl = $('.owl-carousel-for-gallery');
 owl.owlCarousel({
   margin: 10,
   nav: true,
   navText: false,
-  loop: true,
   dots: false,
+  loop: true,
+  items: 1,
+  thumbs: true,
+  thumbImage: true,
+  thumbContainerClass: 'owl-thumbs',
+  thumbItemClass: 'owl-thumb-item'
+})
+
+
+
+
+
+var owl = $('.owl-carousel-main-slider');
+owl.owlCarousel({
+  margin: 10,
+  nav: false,
+  navText: false,
+  loop: true,
+  dots: true,
   responsive: {
     0: {
       items: 1
