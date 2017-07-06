@@ -259,7 +259,7 @@ body,
 }.header::after {
     content: "";
     position: absolute;
-  background-image: url(../../public/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -195px;
   background-size: 351px 319px;
   width: 79px;
@@ -1329,7 +1329,7 @@ body,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -121px 0px;
     background-size: 351px 319px;
     width: 151px;
@@ -1464,7 +1464,7 @@ body,
     position: absolute;
     left: -50px;
     top: -40px;
-  background-image: url(../../public/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -195px;
   background-size: 351px 319px;
   width: 79px;
@@ -1554,7 +1554,7 @@ body,
 .menu .search .submit-button .submit {
     cursor: pointer;
     border: none;
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -169px -162px;
     background-size: 351px 319px;
     width: 24px;
@@ -1708,7 +1708,7 @@ body,
     margin-right: auto;
 }
 .footer .logo .wrapper .line-2 {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: 0px 0px;
     background-size: 351px 319px;
     width: 121px;
@@ -1735,7 +1735,7 @@ body,
     color: #fbfff7;
 }
 .footer .logo .wrapper .company a {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -272px -124px;
     background-size: 351px 319px;
     width: 73px;
@@ -1750,7 +1750,7 @@ body,
     margin-top: 25px;
 }
 .footer .logo .wrapper .creator a {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -121px -82px;
     background-size: 351px 319px;
     width: 135px;
@@ -2462,7 +2462,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.doc div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -272px -160px;
     background-size: 351px 319px;
     width: 35px;
@@ -2498,7 +2498,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.xls div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -307px -160px;
     background-size: 351px 319px;
     width: 29px;
@@ -2534,7 +2534,7 @@ body,
     margin-right: 7px;
 }
 .content .reference-info .block a .img.pdf div {
-    background-image: url(../../public/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-position: -169px -121px;
     background-size: 351px 319px;
     width: 41px;
@@ -3632,7 +3632,7 @@ body {
         max-width: 635px;
     }
   .footer .info .line-1 {
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -158px -195px;
         background-size: 351px 319px;
         width: 79px;
@@ -3810,7 +3810,7 @@ body {
     }
   .gallery .slider-gallery .owl-carousel .owl-nav .owl-prev {
         background-color: transparent;
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -271px -195px;
         background-size: 351px 319px;
         width: 34px;
@@ -3822,7 +3822,7 @@ body {
     }
   .gallery .slider-gallery .owl-carousel .owl-nav .owl-next {
         background-color: transparent;
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -237px -195px;
         background-size: 351px 319px;
         width: 34px;
@@ -4163,7 +4163,7 @@ body {
         content: "";
         display: block;
         margin-left: 18px;
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -210px -121px;
         background-size: 351px 319px;
         width: 40px;
@@ -4275,7 +4275,7 @@ body {
         bottom: -13px;
     }
   .footer .logo .wrapper .line-3 {
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -121px -121px;
         background-size: 351px 319px;
         width: 48px;
@@ -4335,7 +4335,7 @@ body {
         left: -5%;
     }
   .footer .info .line-4 {
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -272px 0px;
         background-size: 351px 319px;
         width: 79px;
@@ -4346,7 +4346,7 @@ body {
         right: 80px;
     }
   .footer .info .line-5 {
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -79px -195px;
         background-size: 351px 319px;
         width: 79px;
@@ -4453,7 +4453,7 @@ body {
     }
   .gallery .slider-gallery .owl-carousel .owl-thumbs::after {
         content: "";
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -305px -195px;
         background-size: 351px 319px;
         width: 23px;
@@ -4473,7 +4473,7 @@ body {
     }
   .gallery .slider-gallery .owl-carousel .owl-thumbs::before {
         content: "";
-        background-image: url(../../public/img/sprite.png);
+        background-image: url(../img/sprite.png);
         background-position: -328px -195px;
         background-size: 351px 319px;
         width: 23px;
