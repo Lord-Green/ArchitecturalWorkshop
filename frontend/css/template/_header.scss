@@ -1,0 +1,336 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: -40px;
+
+    @mixin bg header/line.png;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    @mixin bg header/line.png;
+    right: -4px;
+    top: 80px;
+    max-width: 50px;
+  }
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 0;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+
+    .img {
+      display: flex;
+
+      @mixin bg header/logo.png;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      color: #ff702a;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+
+      &:last-child {
+        color: #a92415;
+      }
+    }
+  }
+
+  .telephone {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+
+    a {
+      color: #353535;
+      font-family: $Roboto;
+      font-weight: 100;
+      font-size: 18px;
+      width: 50%;
+      text-align: center;
+      text-decoration: none;
+
+      span {
+        color: #8d7966;
+        font-family: $Roboto;
+        font-size: 19px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    order: 1;
+    margin-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    .call,
+    .feedback {
+      display: flex;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: inline-flex;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 33px 0;
+        z-index: 1;
+      }
+
+      &::before {
+        border-color: transparent transparent $color-fon;
+        transition: all 1.5s ease;
+      }
+
+      &::after {
+        border-color: transparent $color-fon;
+        transition: all 1.5s ease;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $RobotoCondensed;
+        font-size: 14px;
+        line-height: 2.3;
+        height: 33px;
+        width: 155px;
+        text-align: center;
+        box-sizing: border-box;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 2s ease;
+      }
+    }
+
+    .call {
+      margin-left: auto;
+
+      a {
+        background: #8d7966;
+        color: #f2ecf0;
+      }
+
+      &:hover {
+        a {
+          background: #a92415;
+        }
+      }
+    }
+
+    .feedback {
+      margin-right: auto;
+
+      a {
+        background: #e2ddd9;
+        color: #1b1b1b;
+      }
+
+      &:hover {
+        a {
+          background: #ff702a;
+        }
+      }
+    }
+  }
+
+  .address {
+    order: 3;
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+
+    &::before {
+      top: -50px;
+      left: 155px;
+    }
+
+    &::after {
+      top: initial;
+      bottom: 0;
+      right: 197px;
+      max-width: none;
+    }
+
+    .logo {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: auto;
+      width: 20.8%;
+    }
+
+    .telephone {
+      width: 31%;
+      margin-left: auto;
+      margin-right: 0;
+
+      a {
+        width: 100%;
+
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .buttons {
+      flex-wrap: wrap;
+      max-width: 235px;
+      order: 2;
+      width: 35%;
+      margin-right: 0;
+
+      .call,
+      .feedback {
+        &::before,
+        &::after {
+          border-width: 0 26px 42px 0;
+        }
+
+        a {
+          height: 42px;
+          font-size: 16px;
+          line-height: 2.7;
+          width: 203px;
+          margin-left: -26px;
+          margin-right: -26px;
+          padding-left: 26px;
+          padding-right: 26px;
+        }
+      }
+
+      .call {
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+
+      .feedback {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    &::before {
+      left: 170px;
+    }
+
+    &::after {
+      right: 520px;
+    }
+
+    .logo {
+      width: 13.8%;
+      margin-left: 0;
+    }
+
+    .telephone {
+      width: 16%;
+      margin-left: 0;
+      margin-right: 0;
+
+      a {
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      .call,
+      .feedback {
+        &::before,
+        &::after {
+        }
+
+        a {
+          font-weight: 300;
+          line-height: 2.8;
+        }
+      }
+    }
+
+    .address {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0;
+      width: 27%;
+
+      .block {
+        width: 100%;
+        display: flex;
+
+        .text {
+          font-family: $RobotoCondensed;
+          font-weight: 300;
+          display: flex;
+          flex-wrap: wrap;
+          width: 82%;
+          justify-content: flex-end;
+
+          p {
+            font-family: $RobotoCondensed;
+            font-size: 16px;
+            color: #251f0f;
+            margin: 0;
+
+            span {
+              font-family: $RobotoCondensed;
+              font-weight: bold;
+              font-size: 16px;
+              color: #251f0f;
+            }
+          }
+        }
+
+        &:first-child {
+          margin-bottom: 30px;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          margin-left: 18px;
+
+          @mixin bg header/yandex.png;
+        }
+      }
+    }
+  }
+}

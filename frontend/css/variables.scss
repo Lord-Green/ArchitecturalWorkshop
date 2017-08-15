@@ -1,0 +1,71 @@
+$Roboto: 'Roboto', sans-serif;
+$RobotoCondensed: 'Roboto Condensed', sans-serif;
+$develop: true;
+$production: false;
+$mobile: 320px;
+$tablet: 760px;
+$desktop: 1165px;
+$img-path: ../img/sprite/;
+$blue: #056ef0;
+$column: 200px;
+$color-fon: #f8f8f8;
+
+.mobile-hide {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .tablet-on {
+    display: block;
+  }
+}
+
+@media (min-width: 1165px) {
+  .desktop-on {
+    display: block;
+  }
+}
+
+@keyframes MoveToRight {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+@define-mixin bg $name {
+  background: url('$(img-path)$name') 50% no-repeat;
+  width: width('$(img-path)$name');
+  height: height('$(img-path)$name');
+  display: block;
+}
+
+@define-mixin left-angle $width $height $color {
+  &::before {
+    content: "";
+    display: inline-flex;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $width $height 0;
+    z-index: 1;
+    border-color: transparent transparent $color;
+  }
+}
+
+@define-mixin right-angle $width $height $color {
+  &::after {
+    content: "";
+    display: inline-flex;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent $color;
+    border-width: 0 $width $height 0;
+    z-index: 1;
+  }
+}
+

@@ -1,0 +1,37 @@
+@import "variables.scss";
+@import "template/_fonts.scss";
+@import "template/_header.scss";
+@import "template/_menu.scss";
+@import "template/_footer.scss";
+@import "template/_contact-forms.scss";
+@import "template/_sliders.scss";
+@import "template/_content.scss";
+@import "template/_catalog-content.scss";
+@import "template/_main-content.scss";
+
+body {
+  margin: 0;
+  background: $color-fon;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $mobile) {
+    max-width: 97.5%;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 732px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
